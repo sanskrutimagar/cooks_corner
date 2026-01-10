@@ -4,7 +4,7 @@ dotenv.config();
 
 
 
-const url = process.env.MONGOURL
+const url = process.env.MONGO_URI
 
 const connectToMongoDb =()=> {
     mongoose.connect(url, { useNewUrlParser: true }).then(() => console.log("connection successfull...."))
